@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Dr. Olive Chakraborty — Cryptography Researcher</title>
+<title>Olive Chakraborty — Cryptography Researcher</title>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -213,7 +213,17 @@
   .divider { border: none; border-top: 1px solid var(--border); margin: 0; }
 
   /* ABOUT */
-  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
+  .about-grid { display: grid; grid-template-columns: 260px 1fr 1fr; gap: 3rem; align-items: start; }
+  .about-photo img {
+    width: 100%;
+    max-width: 260px;
+    border-radius: 16px;
+    border: 1px solid var(--border-accent);
+    filter: grayscale(20%);
+    display: block;
+    transition: filter 0.3s;
+  }
+  .about-photo img:hover { filter: grayscale(0%); }
   .about-text p { color: var(--text-secondary); font-size: 1rem; line-height: 1.85; margin-bottom: 1.2rem; }
   .about-interests { margin-top: 2rem; }
   .about-interests h3 { font-size: 0.85rem; font-family: var(--mono); color: var(--indigo-light); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 1rem; }
@@ -546,13 +556,12 @@
 
 <!-- NAV -->
 <nav>
-  <a class="nav-logo" href="#top">// dr.olivechakraborty</a>
+  <a class="nav-logo" href="#top">// olive.chakraborty</a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#research">Research</a></li>
     <li><a href="#publications">Papers</a></li>
     <li><a href="#blog">Blog</a></li>
-   <li><a href="#blog">Photography & Sketching</a></li>
     <li><a href="#cv">CV</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -563,23 +572,23 @@
 <div style="position:relative; min-height:92vh; display:flex; align-items:center; padding:6rem 2.5rem 5rem; overflow:hidden;">
   <canvas id="lattice" style="position:absolute;inset:0;opacity:0.35;pointer-events:none;width:100%;height:100%;"></canvas>
   <div style="position:relative;z-index:2;max-width:820px;">
-    <div class="hero-tag">Cryptography · Post-Quantum · FHE</div>
-    <!-- <h1 style="font-size:clamp(2.6rem,5vw,4.2rem);font-weight:700;line-height:1.1;letter-spacing:-0.03em;margin-bottom:0.3rem;">
-      Building the<br>foundations of <span style="color:var(--indigo-light);">tomorrow's</span><br>secure systems.
-    </h1> -->
-    <p style="font-family:var(--mono);font-size:13px;color:var(--teal);letter-spacing:0.06em;margin-bottom:1.5rem;">// Research Scientist · CS &amp; Mathematics</p>
+    <div class="hero-tag">Post-Quantum Cryptography · FHE · Algebraic Cryptanalysis</div>
+    <h1 style="font-size:clamp(2.6rem,5vw,4.2rem);font-weight:700;line-height:1.1;letter-spacing:-0.03em;margin-bottom:0.3rem;">
+      Securing the world<br>against <span style="color:var(--indigo-light);">quantum</span><br>adversaries.
+    </h1>
+    <p style="font-family:var(--mono);font-size:13px;color:var(--teal);letter-spacing:0.06em;margin-bottom:1.5rem;">// Research Scientist · CEA LIST, Paris</p>
     <p style="font-size:1.1rem;color:var(--text-secondary);max-width:580px;margin-bottom:2.5rem;line-height:1.8;">
-      I work at the intersection of mathematics and computer science, designing cryptographic primitives that remain secure against quantum adversaries and enabling computation on encrypted data.
+      I design and break cryptographic systems for a living. As the creator of <span style="color:var(--indigo-light);">CFPKM</span> — a NIST PQC candidate — and a researcher at CEA LIST, I work at the frontier of post-quantum cryptography and fully homomorphic encryption, building systems that stay secure when quantum computers arrive.
     </p>
     <div style="display:flex;gap:1rem;flex-wrap:wrap;">
       <a class="btn-primary" href="#publications">View Publications</a>
       <a class="btn-ghost" href="#research">Explore Research</a>
     </div>
     <div style="margin-top:4rem;display:flex;gap:3rem;flex-wrap:wrap;padding-top:2rem;border-top:1px solid var(--border);">
-      <div><div style="font-size:2rem;font-weight:700;line-height:1;">24<span style="color:var(--indigo-light);">+</span></div><div class="hero-stat-label">Publications</div></div>
+      <div><div style="font-size:2rem;font-weight:700;line-height:1;">14<span style="color:var(--indigo-light);">+</span></div><div class="hero-stat-label">Publications</div></div>
       <div><div style="font-size:2rem;font-weight:700;line-height:1;">8<span style="color:var(--indigo-light);">+</span></div><div class="hero-stat-label">Years Research</div></div>
-      <div><div style="font-size:2rem;font-weight:700;line-height:1;">1.2<span style="color:var(--indigo-light);">k</span></div><div class="hero-stat-label">Citations</div></div>
-      <div><div style="font-size:2rem;font-weight:700;line-height:1;">6</div><div class="hero-stat-label">Active Projects</div></div>
+      <div><div style="font-size:2rem;font-weight:700;line-height:1;">3</div><div class="hero-stat-label">PhD Students</div></div>
+      <div><div style="font-size:2rem;font-weight:700;line-height:1;">2</div><div class="hero-stat-label">EU Projects</div></div>
     </div>
   </div>
 </div>
@@ -591,44 +600,49 @@
   <div class="section-label reveal">// 01 — about me</div>
   <div class="section-title reveal">Who I am</div>
   <div class="about-grid reveal">
+    <div class="about-photo">
+      <img src="photo.jpg" alt="Olive Chakraborty" />
+    </div>
     <div class="about-text">
-      <p>I am a research scientist specializing in cryptography with a focus on post-quantum cryptography (PQC) and fully homomorphic encryption (FHE). My work aims to build cryptographic systems that are provably secure in a world where large-scale quantum computers exist.</p>
-      <p>I received my PhD in Mathematics from [University Name], where I studied lattice-based constructions and their hardness assumptions. Before that, I earned an M.S. in Computer Science and a B.S. in Pure Mathematics.</p>
-      <p>Currently, I am affiliated with [Research Lab / Institution], where I lead projects on FHE efficiency improvements and standardization efforts for NIST post-quantum algorithms.</p>
+      <p>I am a cryptographer and research scientist at <strong style="color:var(--indigo-light);">CEA LIST</strong> in Palaiseau, France, with over 8 years of experience in post-quantum cryptography and fully homomorphic encryption. My work sits at the intersection of deep mathematical theory and engineering reality — I design new cryptographic primitives, break existing ones, and build systems that protect sensitive data even when it's being computed on.</p>
+      <p>I hold a PhD in Computer Science from <strong style="color:var(--text-primary);">Sorbonne Université</strong>, where I designed and submitted <strong style="color:var(--indigo-light);">CFPKM</strong> — a multivariate key encapsulation mechanism — to the NIST Post-Quantum Cryptography Standardization process, and provided the first known cryptanalysis of the Extension Field Cancellation (EFC) cryptosystem.</p>
+      <p>Beyond theory, I lead EU-funded research projects on privacy-preserving identity verification and secure biometric systems (SafeTravellers, Prividema), supervise PhD and Master's students, and teach Advanced Cryptography at Télécom Paris.</p>
       <div class="about-interests">
         <h3>Research Interests</h3>
         <div class="tag-list">
-          <span class="tag">Lattice Cryptography</span>
-          <span class="tag">Post-Quantum PQC</span>
-          <span class="tag">FHE / TFHE / CKKS</span>
-          <span class="tag">Zero-Knowledge Proofs</span>
-          <span class="tag">Hardness Reductions</span>
-          <span class="tag">Ring-LWE</span>
-          <span class="tag">Secure Computation</span>
-          <span class="tag">Algebraic Number Theory</span>
+          <span class="tag">Post-Quantum Cryptography</span>
+          <span class="tag">Fully Homomorphic Encryption</span>
+          <span class="tag">Multivariate Cryptography</span>
+          <span class="tag">Algebraic Cryptanalysis</span>
+          <span class="tag">Lattice-based Crypto</span>
+          <span class="tag">Threshold Cryptography</span>
+          <span class="tag">Federated Learning</span>
+          <span class="tag">Privacy-preserving ML</span>
+          <span class="tag">Homomorphic Signatures</span>
+          <span class="tag">Secure Biometrics</span>
         </div>
       </div>
     </div>
     <div class="about-sidebar">
       <div class="info-card">
         <div class="info-card-label">Affiliation</div>
-        <div class="info-card-val">CEA LIST / University Paris Saclay]</div>
+        <div class="info-card-val">CEA LIST, Palaiseau</div>
       </div>
       <div class="info-card">
         <div class="info-card-label">Location</div>
-        <div class="info-card-val">Palaiseau, France</div>
+        <div class="info-card-val">Paris, France 🇫🇷</div>
       </div>
       <div class="info-card">
         <div class="info-card-label">Email</div>
-        <div class="info-card-val mono">olive.chakraborty@cea.fr</div>
+        <div class="info-card-val mono">olivebpilani@gmail.com</div>
       </div>
       <div class="info-card">
-        <div class="info-card-label">ORCID</div>
-        <div class="info-card-val mono">0000-0003-0396-908X</div>
+        <div class="info-card-label">LinkedIn</div>
+        <div class="info-card-val mono">olive-chakraborty</div>
       </div>
       <div class="info-card">
-        <div class="info-card-label">Google Scholar</div>
-        <div class="info-card-val mono">h-index: 5 · i10-index: 3</div>
+        <div class="info-card-label">PhD</div>
+        <div class="info-card-val mono">Sorbonne Université · 2020</div>
       </div>
     </div>
   </div>
@@ -699,69 +713,97 @@
   <div class="pub-list reveal">
     <div class="pub-item" data-tag="fhe">
       <div>
-        <div class="pub-venue">CRYPTO 2025</div>
-        <div class="pub-title">Efficient Bootstrapping for CKKS over Large Rings with Tight Security Bounds</div>
-        <div class="pub-authors">[Your Name], Co-Author A, Co-Author B</div>
-        <div class="pub-meta">
-          <span class="pub-badge conference">Conference</span>
-          <span class="pub-badge journal">Best Paper Nominee</span>
-        </div>
+        <div class="pub-venue">ePrint / FHE.org 2026</div>
+        <div class="pub-title">Evaluating Larger Lookup Tables using CKKS</div>
+        <div class="pub-authors">J. Dumezy, A. Alexandru, Y. Polyakov, P.E. Clet, O. Chakraborty, A. Boudguiga</div>
+        <div class="pub-meta"><span class="pub-badge preprint">To be presented</span></div>
       </div>
       <div class="pub-links">
-        <a class="pub-link" href="#">PDF</a>
-        <a class="pub-link" href="#">ePrint</a>
-        <a class="pub-link" href="#">Slides</a>
-      </div>
-    </div>
-
-    <div class="pub-item" data-tag="pqc">
-      <div>
-        <div class="pub-venue">EUROCRYPT 2024</div>
-        <div class="pub-title">Compact Lattice Signatures from Module-NTRU with Quantum-Tight Security Reductions</div>
-        <div class="pub-authors">[Your Name], Co-Author C</div>
-        <div class="pub-meta"><span class="pub-badge conference">Conference</span></div>
-      </div>
-      <div class="pub-links">
-        <a class="pub-link" href="#">PDF</a>
-        <a class="pub-link" href="#">ePrint</a>
-      </div>
-    </div>
-
-    <div class="pub-item" data-tag="pqc">
-      <div>
-        <div class="pub-venue">Journal of Cryptology · 2024</div>
-        <div class="pub-title">On the Hardness of Learning with Errors over Cyclotomic Rings: a Unified Framework</div>
-        <div class="pub-authors">Co-Author D, [Your Name], Co-Author E</div>
-        <div class="pub-meta"><span class="pub-badge journal">Journal</span></div>
-      </div>
-      <div class="pub-links">
-        <a class="pub-link" href="#">PDF</a>
-        <a class="pub-link" href="#">DOI</a>
+        <a class="pub-link" href="https://eprint.iacr.org" target="_blank">ePrint</a>
       </div>
     </div>
 
     <div class="pub-item" data-tag="fhe">
       <div>
-        <div class="pub-venue">ASIACRYPT 2023</div>
-        <div class="pub-title">Threshold FHE: From Secret-Shared Keys to Multiparty Homomorphic Evaluation</div>
-        <div class="pub-authors">[Your Name], Co-Author F, Co-Author G</div>
-        <div class="pub-meta"><span class="pub-badge conference">Conference</span></div>
-      </div>
-      <div class="pub-links">
-        <a class="pub-link" href="#">PDF</a>
-        <a class="pub-link" href="#">Code</a>
-      </div>
-    </div>
-
-    <div class="pub-item" data-tag="zk">
-      <div>
-        <div class="pub-venue">ePrint Archive · 2025</div>
-        <div class="pub-title">ZK-PQC: Post-Quantum Zero-Knowledge Arguments from Ideal Lattices</div>
-        <div class="pub-authors">[Your Name], Co-Author H</div>
+        <div class="pub-venue">ePrint · To appear</div>
+        <div class="pub-title">HEGIDE: A MIMD Oblivious Processor for Private Function Evaluation over CKKS</div>
+        <div class="pub-authors">J. Dumezy, O. Chakraborty, P.E. Clet, A. Boudguiga</div>
         <div class="pub-meta"><span class="pub-badge preprint">Preprint</span></div>
       </div>
       <div class="pub-links">
-        <a class="pub-link" href="#">ePrint</a>
+        <a class="pub-link" href="https://eprint.iacr.org" target="_blank">ePrint</a>
+      </div>
+    </div>
+
+    <div class="pub-item" data-tag="fhe">
+      <div>
+        <div class="pub-venue">Selected Areas in Cryptography · 2025</div>
+        <div class="pub-title">Downlink (T)FHE Ciphertext Compression</div>
+        <div class="pub-authors">A. Bondarchuk, O. Chakraborty, R. Sirdey, G. Couteau</div>
+        <div class="pub-meta"><span class="pub-badge conference">Conference</span></div>
+      </div>
+      <div class="pub-links">
+        <a class="pub-link" href="https://eprint.iacr.org" target="_blank">ePrint</a>
+      </div>
+    </div>
+
+    <div class="pub-item" data-tag="pqc">
+      <div>
+        <div class="pub-venue">Designs, Codes and Cryptography · 2021</div>
+        <div class="pub-title">Cryptanalysis of the Extension Field Cancellation Cryptosystem</div>
+        <div class="pub-authors">O. Chakraborty, J.-C. Faugère, L. Perret</div>
+        <div class="pub-meta"><span class="pub-badge journal">Journal</span></div>
+      </div>
+      <div class="pub-links">
+        <a class="pub-link" href="#" target="_blank">DOI</a>
+      </div>
+    </div>
+
+    <div class="pub-item" data-tag="pqc">
+      <div>
+        <div class="pub-venue">NIST PQC Submission · 2017</div>
+        <div class="pub-title">CFPKM: A Key Encapsulation Mechanism Based on Solving Systems of Non-Linear Multivariate Polynomials</div>
+        <div class="pub-authors">O. Chakraborty, J.-C. Faugère, L. Perret</div>
+        <div class="pub-meta"><span class="pub-badge conference">NIST Candidate</span></div>
+      </div>
+      <div class="pub-links">
+        <a class="pub-link" href="https://eprint.iacr.org" target="_blank">ePrint</a>
+      </div>
+    </div>
+
+    <div class="pub-item" data-tag="fhe">
+      <div>
+        <div class="pub-venue">ICISSP · 2024</div>
+        <div class="pub-title">Pure Multi-Key BGV Implementation</div>
+        <div class="pub-authors">J. Paillet, O. Chakraborty, M. Checri</div>
+        <div class="pub-meta"><span class="pub-badge conference">Conference</span></div>
+      </div>
+      <div class="pub-links">
+        <a class="pub-link" href="#" target="_blank">PDF</a>
+      </div>
+    </div>
+
+    <div class="pub-item" data-tag="fhe">
+      <div>
+        <div class="pub-venue">IEEE CSR · 2023</div>
+        <div class="pub-title">Practical Multi-Key Homomorphic Encryption for More Flexible and Efficient Secure Federated Average Aggregation</div>
+        <div class="pub-authors">O. Chakraborty, A. Pedrouzo-Ulloa, A. Boudguiga, R. Sirdey, O. Stan, M. Zuber</div>
+        <div class="pub-meta"><span class="pub-badge conference">Conference</span></div>
+      </div>
+      <div class="pub-links">
+        <a class="pub-link" href="#" target="_blank">PDF</a>
+      </div>
+    </div>
+
+    <div class="pub-item" data-tag="fhe">
+      <div>
+        <div class="pub-venue">WACH @ CCS · 2022</div>
+        <div class="pub-title">Efficient and Accurate Homomorphic Comparisons</div>
+        <div class="pub-authors">O. Chakraborty, M. Zuber</div>
+        <div class="pub-meta"><span class="pub-badge conference">Conference</span></div>
+      </div>
+      <div class="pub-links">
+        <a class="pub-link" href="#" target="_blank">PDF</a>
       </div>
     </div>
   </div>
@@ -809,59 +851,65 @@
     <div class="cv-section">
       <h3>Positions</h3>
       <div class="cv-item">
-        <div class="cv-item-year">2022 — present</div>
+        <div class="cv-item-year">Nov 2021 — Present</div>
         <div class="cv-item-title">Research Scientist</div>
-        <div class="cv-item-place">[Institution / Lab Name], Paris</div>
+        <div class="cv-item-place">CEA LIST, Palaiseau, France</div>
       </div>
       <div class="cv-item">
-        <div class="cv-item-year">2020 — 2022</div>
-        <div class="cv-item-title">Postdoctoral Researcher</div>
-        <div class="cv-item-place">[University Name], [Country]</div>
+        <div class="cv-item-year">Feb 2021 — Oct 2021</div>
+        <div class="cv-item-title">Post-Doctoral Researcher</div>
+        <div class="cv-item-place">CEA LIST, Palaiseau, France</div>
       </div>
       <div class="cv-item">
-        <div class="cv-item-year">2019 — 2020</div>
+        <div class="cv-item-year">Jun 2017 — Dec 2020</div>
+        <div class="cv-item-title">PhD Researcher</div>
+        <div class="cv-item-place">Sorbonne Université, Paris, France</div>
+      </div>
+      <div class="cv-item">
+        <div class="cv-item-year">Jun 2014 — Dec 2014</div>
         <div class="cv-item-title">Research Intern</div>
-        <div class="cv-item-place">[Research Lab, e.g. Bell Labs / Inria]</div>
+        <div class="cv-item-place">INRIA, Nancy, France</div>
       </div>
-      <h3 style="margin-top:2rem;">Awards & Grants</h3>
+      <h3 style="margin-top:2rem;">Teaching</h3>
       <div class="cv-item">
         <div class="cv-item-year">2024</div>
-        <div class="cv-item-title">Best Paper Nominee — CRYPTO 2024</div>
-        <div class="cv-item-place">International Cryptology Conference</div>
+        <div class="cv-item-title">Visiting Lecturer — Advanced Cryptography</div>
+        <div class="cv-item-place">Télécom Paris, Master 2</div>
       </div>
+      <h3 style="margin-top:2rem;">Service</h3>
       <div class="cv-item">
-        <div class="cv-item-year">2023</div>
-        <div class="cv-item-title">ANR Research Grant</div>
-        <div class="cv-item-place">French National Research Agency</div>
+        <div class="cv-item-year">2024</div>
+        <div class="cv-item-title">Organizer — Post Quantum Algebraic Cryptography Workshop</div>
+        <div class="cv-item-place">IHP Paris</div>
       </div>
     </div>
     <div class="cv-section">
       <h3>Education</h3>
       <div class="cv-item">
-        <div class="cv-item-year">2016 — 2020</div>
-        <div class="cv-item-title">PhD in Mathematics</div>
-        <div class="cv-item-place">[University Name] · Advisor: Prof. [Name]</div>
+        <div class="cv-item-year">2017 — 2020</div>
+        <div class="cv-item-title">PhD in Computer Science</div>
+        <div class="cv-item-place">Sorbonne Université · Supervisors: Jean-Charles Faugère & Ludovic Perret</div>
       </div>
       <div class="cv-item">
-        <div class="cv-item-year">2014 — 2016</div>
-        <div class="cv-item-title">M.S. in Computer Science</div>
-        <div class="cv-item-place">[University Name]</div>
+        <div class="cv-item-year">2015 — 2016</div>
+        <div class="cv-item-title">M.Sc. in Information Security</div>
+        <div class="cv-item-place">Royal Holloway, University of London · First Class with Distinction</div>
       </div>
       <div class="cv-item">
-        <div class="cv-item-year">2011 — 2014</div>
-        <div class="cv-item-title">B.S. in Pure Mathematics</div>
-        <div class="cv-item-place">[University Name] · Summa Cum Laude</div>
+        <div class="cv-item-year">2010 — 2015</div>
+        <div class="cv-item-title">M.Sc. in Mathematics & B.Engg. in Computer Science</div>
+        <div class="cv-item-place">BITS Pilani, India · CGPA 8.5/10</div>
       </div>
-      <h3 style="margin-top:2rem;">Service</h3>
+      <h3 style="margin-top:2rem;">EU Projects</h3>
       <div class="cv-item">
-        <div class="cv-item-year">Ongoing</div>
-        <div class="cv-item-title">Program Committee</div>
-        <div class="cv-item-place">CRYPTO, EUROCRYPT, ASIACRYPT, PKC</div>
+        <div class="cv-item-year">Active</div>
+        <div class="cv-item-title">Work Package Lead — EU SafeTravellers</div>
+        <div class="cv-item-place">Privacy-preserving identity verification</div>
       </div>
       <div class="cv-item">
-        <div class="cv-item-year">Ongoing</div>
-        <div class="cv-item-title">Reviewer</div>
-        <div class="cv-item-place">Journal of Cryptology, IEEE S&P, CCS</div>
+        <div class="cv-item-year">Active</div>
+        <div class="cv-item-title">Contributor — EU Prividema</div>
+        <div class="cv-item-place">Secure biometric systems</div>
       </div>
     </div>
   </div>
@@ -876,17 +924,21 @@
   <div class="contact-inner reveal">
     <div class="contact-left">
       <h2>Let's connect.</h2>
-      <p>Open to research collaborations, speaking invitations, PhD student inquiries, and discussions on cryptography, PQC standardization, or FHE applications.</p>
+      <p>Open to research collaborations, speaking invitations, PhD student inquiries, and discussions on post-quantum cryptography, FHE, or privacy-preserving systems.</p>
       <div class="contact-links">
-        <a class="contact-link" href="mailto:olive.chakraborty@cea.fr">
+        <a class="contact-link" href="mailto:olivebpilani@gmail.com">
           <span class="contact-link-icon">✉</span>
-          olive.chakraborty@cea.fr
+          olivebpilani@gmail.com
         </a>
-        <a class="contact-link" href="https://www.linkedin.com/in/olive-chakraborty/">
+        <a class="contact-link" href="https://linkedin.com/in/olive-chakraborty" target="_blank">
           <span class="contact-link-icon">in</span>
-          https://www.linkedin.com/in/olive-chakraborty/
+          linkedin.com/in/olive-chakraborty
         </a>
-        <a class="contact-link" href="#">
+        <a class="contact-link" href="https://github.com/oliverRHUL" target="_blank">
+          <span class="contact-link-icon">gh</span>
+          github.com/oliverRHUL
+        </a>
+        <a class="contact-link" href="https://scholar.google.com" target="_blank">
           <span class="contact-link-icon">📖</span>
           Google Scholar Profile
         </a>
@@ -914,12 +966,11 @@
 
 <!-- FOOTER -->
 <footer>
-  <span class="footer-copy">© 2025 Dr. [Your Name] · Built with intention.</span>
+  <span class="footer-copy">© 2026 Olive Chakraborty · CEA LIST, Paris</span>
   <div class="footer-links">
-    <a href="https://github.com/yourname">GitHub</a>
-    <a href="#">Scholar</a>
-    <a href="https://eprint.iacr.org">ePrint</a>
-    <a href="#">RSS</a>
+    <a href="https://github.com/oliverRHUL" target="_blank">GitHub</a>
+    <a href="https://scholar.google.com" target="_blank">Scholar</a>
+    <a href="https://eprint.iacr.org" target="_blank">ePrint</a>
   </div>
 </footer>
 
